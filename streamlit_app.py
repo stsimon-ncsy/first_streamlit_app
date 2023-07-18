@@ -1,4 +1,3 @@
-streamlit.stop()
 import requests
 import pandas
 import streamlit
