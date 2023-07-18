@@ -45,7 +45,7 @@ except URLError as e:
   streamlit.error()
 # my_cur = my_cnx.cursor()
 # my_cur.execute("SELECT * from fruit_load_list")
-#my_data_rows = my_cur.fetchall()
+# my_data_rows = my_cur.fetchall()
 streamlit.header("The fruit load list contains:")
 def get_fruit_load_list():
     with my_cnx.cursor as my_cur:
@@ -57,6 +57,7 @@ if streamlit.button('Get Fruit Load List'):
     my_data_rows = get_fruit_load_list()
     streamlit.dataframe(my_data_rows)
     
+    streamlit.stop()
     
 add_my_fruit = streamlit.text_input("What fruit are you adding?")
 streamlit.write('Thanks for adding ', add_my_fruit)
