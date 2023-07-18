@@ -1,4 +1,4 @@
 #requirements.txt
-snowflake-python-connector
+snowflake-connector-python[pandas]
 cffi==1.15.0
 pyarrow==6.0.1
