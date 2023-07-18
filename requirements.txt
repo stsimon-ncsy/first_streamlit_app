@@ -1,2 +1,4 @@
 #requirements.txt
 snowflake-python-connector
+cffi==1.15.0
+pyarrow==6.0.1
